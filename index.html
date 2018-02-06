@@ -17,213 +17,219 @@
 </head>
 
 
-<body>
+<body id="hom">
 
-    <nav class="navbar main-navbar fixed-top navbar-expand-md ">
+    <nav class="navbar  main-navbar fixed-top navbar-expand-lg navbar-light" id="navbar-main">
         <div class="container">
             <a class="navbar-brand" href="#">Cahee</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#scroll-nav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-            <div class="collapse navbar-collapse justify-content-end">
-                <ul class="navbar-nav ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse justify-content-end " id="scroll-nav">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hom">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#abo">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#ser">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galery</a>
+                        <a class="nav-link" href="#gal">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#blo">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#con">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div data-spy="scroll" data-target="#navbar-main" data-offset="0">
+        <header class="section-header" id="hea">
+            <div class="container">
+                <div class="row justify-content-start header-section">
+                    <div class="col-md-5 header-text">
+                        <h2>Fresh Life</h2>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <button type="button" class="btn box-shadow">Get free now</button>
+                    </div>
 
-    <header class="section-header">
-        <div class="container">
-            <div class="row justify-content-start header-section">
-                <div class="col-md-5 header-text">
-                    <h2>Fresh Life</h2>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                    <button type="button" class="btn">Get free now</button>
                 </div>
 
-            </div>
 
 
+                <div class="col-md-12 scroll">
+                    <img src="images/scroll-img.png" alt="scroll-icon">
 
-            <div class="col-md-12 scroll">
-                <img src="images/scroll-img.png" alt="scroll-icon">
-
-            </div>
-        </div>
-    </header>
-    <section class="about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 about-us-img"><img src="images/about-us.png" alt=""></div>
-                <div class="col-lg-5 offset-lg-3">
-                    <h2>About-Us</h2>
-                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="button-services">
-                        <div class="button-text"><span>Online Shopping</span></div>
-                        <div class="button-img"><img src="images/shoping.svg" alt="Online Shoping"></div>
-                    </div>
-                    <div class="button-services">
-                        <div class="button-text"><span>Quality Product</span></div>
-                        <div class="button-img"><img src="images/quality.png" alt="Quality Product"></div>
-                    </div>
-                    <div class="button-services">
-                        <div class="button-text"><span>Domestic &amp; International Delivery</span></div>
-                        <div class="button-img"><img src="images/domestic.png" alt="Domestic & International Delivery"></div>
-                    </div>
-                    <div class="button-services">
-                        <div class="button-text"><span>Well Organized</span></div>
-                        <div class="button-img"><img src="images/carrot.png" alt="Organized"></div>
+        </header>
+        <section class="about-us" id="abo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 about-us-img"><img src="images/about-us.png" alt=""></div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <h2>About-Us</h2>
+                        <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-1 services-title">
-                    <h2>Our Services</h2>
+            </div>
+        </section>
+        <section class="services" id="ser">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="button-services box-shadow">
+                            <div class="button-text"><span>Online Shopping</span></div>
+                            <div class="button-img"><img src="images/shoping.svg" alt="Online Shoping"></div>
+                        </div>
+                        <div class="button-services box-shadow">
+                            <div class="button-text"><span>Quality Product</span></div>
+                            <div class="button-img"><img src="images/quality.png" alt="Quality Product"></div>
+                        </div>
+                        <div class="button-services box-shadow">
+                            <div class="button-text "><span>Domestic &amp; International Delivery</span></div>
+                            <div class="button-img"><img src="images/domestic.png" alt="Domestic & International Delivery"></div>
+                        </div>
+                        <div class="button-services box-shadow">
+                            <div class="button-text"><span>Well Organized</span></div>
+                            <div class="button-img"><img src="images/carrot.png" alt="Organized"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1 services-title">
+                        <h2>Our Services</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="gallery">
-        <div class="container">
-            <div class="col-md-6 offset-md-3">
-                <h2>Gallery</h2>
-                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section>
+        <section class="gallery" id="gal">
+            <div class="container">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Gallery</h2>
+                    <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 "><img src="images/gallery-pitches.png" alt=""></div>
+                    <div class="col-lg-4"><img src="images/blueberrys.png" alt="">
+                        <img src="images/black.png" alt=""></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6"><img src="images/jogurt.png" alt=""></div>
+                    <div class="col-lg-6"> <img src="images/granat.png" alt=""></div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8"><img src="images/gallery-pitches.png" alt=""></div>
-                <div class="col-lg-4"><img src="images/blueberrys.png" alt="">
-                    <img src="images/black.png" alt=""></div>
+        </section>
+        <section class="subscribe" id="sub">
+            <div class="container">
+                <div class="col-md-9">
+                    <h3 class="subscribe-title">Subscribe To Us</h3>
+                    <div class="col-md-9 subscribe-text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+                    <input type="email" class="subscribe-input" placeholder="Your email address...">
+                    <a href="#" class="button subscribe-button box-shadow">SUBSCRIBE</a>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6"><img src="images/jogurt.png" alt=""></div>
-                <div class="col-lg-6"> <img src="images/granat.png" alt=""></div>
-            </div>
-        </div>
-    </section>
-    <section class="subscribe">
-        <div class="container">
-            <div class="col-md-9">
-                <h3 class="subscribe-title">Subscribe To Us</h3>
-                <div class="col-md-9 subscribe-text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-                <input type="email" class="subscribe-input" placeholder="Your email address...">
-                <a href="#" class="button subscribe-button">SUBSCRIBE</a>
-            </div>
-        </div>
-    </section>
-    <section class="blog">
-        <div class="container">
-            <div class="col-md-6 offset-md-3">
-                <h2>Blog</h2>
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="blog-box blog-1">
-                        <section>
-                            <span>20</span> NOV
-                        </section>
-                        <div class="blog-text">
-                            <h4>Green Smoothies: Too Much of a Good Thing?</h4>
-                            <h5>By Auskteez - 2 hours ago</h5>
+        </section>
+        <section class="blog" id="blo">
+            <div class="container">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Blog</h2>
+                    <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-box blog-1">
+                            <section>
+                                <span>20</span> NOV
+                            </section>
+                            <div class="blog-text">
+                                <h4>Green Smoothies: Too Much of a Good Thing?</h4>
+                                <h5>By Auskteez - 2 hours ago</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-box blog-2">
+                            <section>
+                                <span>14</span> NOV
+                            </section>
+                            <div class="blog-text">
+                                <h4>Green Food and a "Thirst" for Innovation</h4>
+                                <h5>By Auskteez - 3 hours ago</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="blog-box blog-3">
+                            <section>
+                                <span>10</span> NOV
+                            </section>
+                            <div class="blog-text">
+                                <h4>Pesticides &amp; Food: What You Need to Know</h4>
+                                <h5>By Auskteez - 6 hours ago</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="blog-box blog-2">
-                        <section>
-                            <span>14</span> NOV
-                        </section>
-                        <div class="blog-text">
-                            <h4>Green Food and a "Thirst" for Innovation</h4>
-                            <h5>By Auskteez - 3 hours ago</h5>
-                        </div>
-                    </div>
+                <div class="row">
+                    <button class="button blog-button box-shadow">View more</button>
                 </div>
-
-                <div class="col-lg-4">
-                    <div class="blog-box blog-3">
-                        <section>
-                            <span>10</span> NOV
-                        </section>
-                        <div class="blog-text">
-                            <h4>Pesticides &amp; Food: What You Need to Know</h4>
-                            <h5>By Auskteez - 6 hours ago</h5>
-                        </div>
+            </div>
+        </section>
+        <section class="contact" id="con">
+            <div class="container">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Contact</h2>
+                    <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" placeholder="You name...">
+                                <input type="email" placeholder="Your email...">
+                                <input type="number" placeholder="Your phone number...">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-text">
+                        <h4>ADDRES</h4>
+                        <p>123 City Name, Street, City, Country</p>
+                        <h4>Email</h4>
+                        <p>cahee@domain.com</p>
+                        <h4>Phone</h4>
+                        <p>+012 345 6789</p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <button class="button blog-button">View more</button>
-            </div>
-        </div>
-    </section>
-    <section class="contact">
+        </section>
+    </div>
+    <footer>
         <div class="container">
-            <div class="col-md-6 offset-md-3">
-                <h2>Contact</h2>
-                <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
-            </div>
             <div class="row">
-            <div class="col-md-6">
-                <form action="">
-                   <div class="form-group">
-                    <input type="text" placeholder="You name...">
-                    <input type="email" placeholder="Your email...">
-                    <input type="number" placeholder="Your phone number...">
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your message..."></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-6 contact-text">
-                <h4>ADDRES</h4>
-                <p>123 City Name, Street, City, Country</p>
-                <h4>Email</h4>
-                <p>cahee@domain.com</p>
-                <h4>Phone</h4>
-                <p>+012 345 6789</p>
-            </div>
+                <div class="col-md-4 footer-text">© 2015 Company. All right reserved.</div>
+                <div class="col-md-2 offset-md-1 footer-text-cahee">Cahee</div>
+                <div class="col-md-4 offset-md-1 footer-text">Made with <span>love</span> by Auskteez</div>
             </div>
         </div>
-    </section>
-    <footer><div class="container"><div class="row">
-        <div class="col-md-4 footer-text">© 2015 Company. All right reserved.</div>
-        <div class="col-md-2 offset-md-1 footer-text-cahee">Cahee</div>
-        <div class="col-md-4 offset-md-1 footer-text">Made with <span>love</span> by Auskteez</div>
-    </div></div></footer>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--  JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    <script src="js/js.js"></script>
 
 </body>
 

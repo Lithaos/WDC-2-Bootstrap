@@ -1,5 +1,5 @@
 
-$('body').scrollspy({ target: '#navbar-main' })
+$('body').scrollspy({ target: '#navbar-main', offset: 140})
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 })
@@ -13,12 +13,11 @@ $("#scroll-nav ul li a[href^='#']").on('click', function(e) {
 
    // animate
    $('html, body').animate({
-       scrollTop: $(hash).offset().top
+       scrollTop: $(hash).offset().top-100
      }, 800, function(){
-
-       // when done, add hash to url
-       // (default click behaviour)
-       window.location.hash = hash;
      });
 
 });
+ $('.navbar-collapse a').click(function (e) {
+        $('.navbar-collapse').collapse('toggle');
+      });

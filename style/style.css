@@ -5,7 +5,6 @@
 body{
     position: relative;
 }
-
 nav {
     background-color: white;
 }
@@ -33,7 +32,10 @@ nav {
 	border-top: 3px solid #ff6033;
     margin-top: -3px;
 }
-
+.nav li a:hover{
+	border-top: 3px solid #ff6033;
+    margin-top: -3px;
+}
 .btn {
     background-color: #ff6033;
     color: white;
@@ -97,8 +99,13 @@ header p {
 .services {
     background-color: #70bfff;
     padding: 100px 0;
+
 }
 
+.services row div{
+        display: flex;
+    flex-direction: column-reverse;
+}
 .button-services {
     background-color: white;
     margin: 20px 0;
@@ -296,6 +303,7 @@ blog .row,
     display: flex;
     flex-direction: column;
     padding: 50px 20px 23px;
+    width: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
 
 }
@@ -422,5 +430,14 @@ input:hover, input:focus, textarea:hover, textarea:focus{
 @media (max-width: 992px) { 
     .gallery img {
     max-width: 100%;
-}
+    }
+    .services .row, .about-us .row, .contact .row{
+        flex-direction:column-reverse;
+    }
+    footer .row div{
+        text-align: center;
+    }
+    .contact .row div, .contact .row div p {
+        text-align: center;
+    }
 }

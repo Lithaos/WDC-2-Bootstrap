@@ -2,9 +2,11 @@
     font-family: Raleway, AdobeInvisFont, MyriadPro;
 
 }
-body{
+
+body {
     position: relative;
 }
+
 nav {
     background-color: white;
 }
@@ -12,6 +14,7 @@ nav {
 .navbar a {
     color: #262626;
 }
+
 
 .navbar-brand {
     font-family: Pacifico, AdobeInvisFont, MyriadPro;
@@ -28,14 +31,17 @@ nav {
     padding: 5px 0;
     text-transform: uppercase;
 }
+
 .active {
-	border-top: 3px solid #ff6033;
+    border-top: 3px solid #ff6033;
     margin-top: -3px;
 }
-.nav li a:hover{
-	border-top: 3px solid #ff6033;
+
+.nav li a:hover {
+    border-top: 3px solid #ff6033;
     margin-top: -3px;
 }
+
 .btn {
     background-color: #ff6033;
     color: white;
@@ -45,21 +51,23 @@ nav {
 
 header {
     position: relative;
-    height: 100%;
     padding-top: 250px;
     background-image: url(../images/header-section-bg.png);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
+
 }
 
 .header-text {
     padding-bottom: 320px;
 }
 
-header h2 {
+header h1 {
     font-size: 60px;
     color: rgba(38, 38, 38, 255);
     font-weight: 900;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 header p {
@@ -88,10 +96,11 @@ header p {
     font-weight: bold;
     font-size: 90px;
     color: rgba(255, 255, 255, 255);
+    flex-wrap: nowrap;
+    margin: auto;
 }
 
 .about-us p {
-    font-weight: 100;
     font-size: 17px;
     color: rgba(255, 255, 255, 255);
 }
@@ -102,10 +111,11 @@ header p {
 
 }
 
-.services row div{
-        display: flex;
+.services row div {
+    display: flex;
     flex-direction: column-reverse;
 }
+
 .button-services {
     background-color: white;
     margin: 20px 0;
@@ -137,6 +147,7 @@ header p {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .gallery {
@@ -145,12 +156,12 @@ header p {
 
 .gallery h2 {
     padding-top: 100px;
-
     font-size: 90px;
     font-weight: bold;
     color: rgba(38, 38, 38, 255);
     text-align: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .gallery p {
@@ -165,9 +176,7 @@ header p {
 .gallery .row,
 blog .row,
 .contact .row {
-   
-    display: flex;
-    margin: 0 -25px;
+    margin: auto;
 }
 
 .gallery img {
@@ -193,10 +202,10 @@ blog .row,
     padding: 150px 0;
 }
 
-.subscribe a{
+.subscribe a {
     text-decoration: none;
-    color:white;
-	
+    color: white;
+
 }
 
 .subscribe-title {
@@ -225,6 +234,7 @@ blog .row,
     padding: 20px 30px;
     height: 55px;
     font-weight: 100;
+    border: none;
 }
 
 .blog {
@@ -238,6 +248,7 @@ blog .row,
     font-weight: bold;
     text-align: center;
     margin-bottom: 30px;
+    overflow: hidden;
 }
 
 .blog p {
@@ -344,6 +355,7 @@ blog .row,
     font-size: 90px;
     color: rgba(38, 38, 38, 255);
     text-align: center;
+    overflow: hidden;
 
 }
 
@@ -388,7 +400,8 @@ textarea::placeholder {
     text-align: left;
     margin-bottom: 5px;
 }
-footer{
+
+footer {
     background-color: #262626;
     padding: 30px 0;
     margin: 0;
@@ -399,45 +412,72 @@ footer{
     color: rgba(185, 185, 185, 255);
     text-align: right;
 }
-.footer-text-cahee{
+
+.footer-text-cahee {
     font-size: 17pt;
     color: rgba(185, 185, 185, 255);
     text-align: center;
     font-family: Pacifico, AdobeInvisFont, MyriadPro;
 }
-.footer-text span{
+
+.footer-text span {
     color: #f52b55;
 }
 
-.box-shadow{
-        box-shadow: 2px 2px 3px #666666;
+.box-shadow {
+    box-shadow: 2px 2px 3px #666666;
 }
+
 .gallery img:hover {
     transform: scale(1.08);
     z-index: 1;
 }
-.zoom{
-     transition: all 0.35s ease-in-out;
+
+.zoom {
+    transition: all 0.35s ease-in-out;
 }
-.zoom:hover{
+
+.zoom:hover {
     transform: scale(1.08);
     z-index: 1;
 }
-input:hover, input:focus, textarea:hover, textarea:focus{
+
+.contact input:hover,
+.contact input:focus,
+.contact textarea:hover,
+.contact textarea:focus {
     border-left: 5px solid blue;
     padding: 20px 10px;
 }
-@media (max-width: 992px) { 
+
+@media (max-width: 992px) {
     .gallery img {
-    max-width: 100%;
+        max-width: 100%;
     }
-    .services .row, .about-us .row, .contact .row{
-        flex-direction:column-reverse;
+    .gallery .col-lg-8,
+    .gallery .col-lg-4,
+    .gallery .col-lg-6 {
+        margin: auto;
     }
-    footer .row div{
+    .gallery row {
+        margin: auto;
+    }
+    .services .row,
+    .about-us .row,
+    .contact .row {
+        flex-direction: column-reverse;
+    }
+    footer .row div {
         text-align: center;
     }
-    .contact .row div, .contact .row div p {
+    .contact .row div,
+    .contact .row div p {
         text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .subscribe button {
+        width: 70%;
     }
 }

@@ -16,8 +16,8 @@ $("#scroll-nav ul li a[href^='#']").on('click', function(e) {
        scrollTop: $(hash).offset().top-100
      }, 800, function(){
      });
-
+window.location.hash = hash;
 });
  $('.navbar-collapse a').click(function (e) {
-        $('.navbar-collapse').collapse('toggle');
+        $('.navbar-collapse').collapse('hide');
       });
